@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="16dp"
+        android:text="Proyecto Nova"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Menú de Navegación -->
+    <LinearLayout
+        android:id="@+id/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_inicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio"
+            android:textColor="@android:color/white"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_servicios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Servicios"
+            android:textColor="@android:color/white"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_proyectos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proyectos"
+            android:textColor="@android:color/white"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_acerca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acerca de"
+            android:textColor="@android:color/white"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_contacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacto"
+            android:textColor="@android:color/white"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <!-- Contenido Principal -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/navigation_menu"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/section_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido a Nova"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/section_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nova es tu solución innovadora para la gestión de proyectos."
+                android:textSize="16sp" />
+
+            <!-- Formulario de Contacto -->
+            <LinearLayout
+                android:id="@+id/contact_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/form_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Formulario de Contacto"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/et_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre"
+                    android:inputType="textPersonName"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Correo Electrónico"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:id="@+id/et_mensaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mensaje"
+                    android:inputType="textMultiLine"
+                    android:padding="8dp"
+                    android:lines="4"
+                    android:gravity="top"
+                    android:minLines="4" />
+
+                <Button
+                    android:id="@+id/btn_enviar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enviar"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:padding="12dp"
+                    android:layout_marginTop="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
