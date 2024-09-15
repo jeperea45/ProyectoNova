@@ -8,23 +8,25 @@
   </head>
   <body>
     <header>
-      <div class="logo-container">
-        <img
-          src="./img/5c5de507-ea6a-4314-a33e-ff63948180ea.jfif"
-          alt="Logo de Nova Soluciones 7x24"
-          class="logo"
-        />
-        <h1>Proyecto Nova</h1>
-      </div>
       <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+        <nav class="navbar"> <!--barra del menu superior-->
+          <div class="menu-toggle" id="menu-toggle">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+            <div class="site-name"> <h1>NOVA</h1></div>
+              <button class="login-button">Login</button>
+          </div>
+          <ul class="nav-list" id="nav-list">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#proyectos">Proyectos</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+          </ul>
       </nav>
     </header>
-
     <section id="servicios">
       <h2>Nuestros Servicios</h2>
       <ul>
@@ -33,5 +35,13 @@
         <li>Soporte 24/7</li>
       </ul>
     </section>
+    <footer>
+      <footer>
+        <p>Bogotá, Colombia<br>Teléfono: 01 772 8808<br>www.gruponova.com</p>
+    </footer>
+
+    <!-- Botón de "Volver arriba" -->
+    <button onclick="topFunction()" id="topBtn" title="Volver arriba">↑</button>
+    <script src="./js/script.js"></script>
   </body>
 </html>
