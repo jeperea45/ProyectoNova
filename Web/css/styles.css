@@ -77,9 +77,14 @@ header nav ul li a:hover {
 
 /* Botón Menú Hamburguesa */
 .menu-toggle {
-  display: none;
+  display: block;
   cursor: pointer;
   padding: 9px;
+  background-color: #4e0f24; /* Cambia este color si es necesario */
+  position: absolute; /* Asegura que esté visible y alineado */
+  top: 41px; /* Ajusta la posición para que no se superponga */
+  left: 10px; /* Alineado a la derecha */
+  z-index: 1000; /* Asegura que el botón esté al frente */
 }
 
 .nav-list { /*botones del menu */
@@ -88,6 +93,19 @@ header nav ul li a:hover {
   margin: 0;
   display: flex;
   gap: 5px;
+  display: none;
+  margin-top: 50px; /* Ajusta este valor para dejar más espacio entre el menú y el botón */
+
+}
+.nav-list.active {
+  display: flex; /* Muestra el menú cuando se active */
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #56132a;
+  width: 100%;
+  border-top: 1px solid #801c3e;
 }
 .nav-list li {  /*botones del menu */
   display: inline;
@@ -103,9 +121,9 @@ header nav ul li a:hover {
 }
 
 .menu-toggle .bar {
-  background-color: #ffffff;
+  background-color: #ffffff; /* Color de las barras del ícono */
   height: 3px;
-  width: 20px;
+  width: 25px;
   margin: 5px 0;
 }
 
@@ -137,12 +155,16 @@ header nav ul li a:hover {
 
 /* Estilo del botón Login */
 .login-button {
+  position: absolute; /* Lo posicionamos de forma absoluta */
+  right: 20px; /* Alineamos a la derecha */
+  top: 50%; /* Centramos verticalmente */
+  transform: translateY(-50%); /* Ajuste para centrar en la altura */
   background-color: #a92553;
   border: none;
   color: #ffffff;
   padding: 10px 20px;
   cursor: pointer;
-  border-radius: 20px;  /* Bordes redondeados */
+  border-radius: 20px;
   font-size: 1rem;
   transition: background-color 0.3s ease;
 }
