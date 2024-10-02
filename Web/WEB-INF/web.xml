@@ -1,0 +1,9 @@
+<servlet>
+    <servlet-name>ContactoServlet</servlet-name>
+    <servlet-class>ContactoServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ContactoServlet</servlet-name>
+    <url-pattern>/ContactoServlet</url-pattern>
+</servlet-mapping>

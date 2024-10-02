@@ -1,0 +1,7 @@
+{
+  "java.project.sourcePaths": ["Web\\src"],
+  "java.project.referencedLibraries": [
+    "c:\\Users\\Juan Esteban Perea\\OneDrive - SENA\\Escritorio\\ProyectoNova\\Web\\WEB-INF\\lib\\servlet-api.jar"
+  ],
+  "java.project.outputPath": "Web\\WEB-INF\\classes"
+}
